@@ -116,6 +116,11 @@ function setTime() {
             buttonA.textContent = "1. strings";
             buttonA.setAttribute("class","btn-primary")
             buttonA.setAttribute("style","background-color:purple; border-color:purple; margin:5px;");
+            //add listener
+            buttonA.addEventListener("click", function() {
+                alert("Wrong Answer!");
+            })
+
             //append to container
             buttonsAnswerA.appendChild(buttonA);
       //append to document
@@ -127,13 +132,18 @@ function setTime() {
       //add content
       buttonsAnswerB.setAttribute("style", "margin-left:22%", "text-align:left;");
             //creating multiple choice a) button
-            var buttonA = document.createElement ("button");
+            var buttonB = document.createElement ("button");
             //add content
-            buttonA.textContent = "2. booleans";
-            buttonA.setAttribute("class","btn-primary")
-            buttonA.setAttribute("style","background-color:purple; border-color:purple; margin:5px;");
+            buttonB.textContent = "2. booleans";
+            buttonB.setAttribute("class","btn-primary")
+            buttonB.setAttribute("style","background-color:purple; border-color:purple; margin:5px;");
+            //add listener
+            buttonB.addEventListener("click", function() {
+                secondsLeft-10;
+                alert("Wrong Answer!");
+            })
             //append to container
-            buttonsAnswerB.appendChild(buttonA);
+            buttonsAnswerB.appendChild(buttonB);
       //append to document
       document.body.appendChild(buttonsAnswerB);
    
@@ -142,13 +152,17 @@ function setTime() {
       //add content
       buttonsAnswerC.setAttribute("style", "margin-left:22%", "text-align:left;");
             //creating multiple choice a) button
-            var buttonA = document.createElement ("button");
+            var buttonC = document.createElement ("button");
             //add content
-            buttonA.textContent = "3. alerts";
-            buttonA.setAttribute("class","btn-primary")
-            buttonA.setAttribute("style","background-color:purple; border-color:purple; margin:5px;");
+            buttonC.textContent = "3. alerts";
+            buttonC.setAttribute("class","btn-primary")
+            buttonC.setAttribute("style","background-color:purple; border-color:purple; margin:5px;");
+            //add listener
+            buttonB.addEventListener("click", function() {
+                questionTwo()
+            })
             //append to container
-            buttonsAnswerC.appendChild(buttonA);
+            buttonsAnswerC.appendChild(buttonC);
       //append to document
       document.body.appendChild(buttonsAnswerC);
 
@@ -157,31 +171,27 @@ function setTime() {
       //add content
       buttonsAnswerD.setAttribute("style", "margin-left:22%", "text-align:left;");
             //creating multiple choice a) button
-            var buttonA = document.createElement ("button");
+            var buttonD = document.createElement ("button");
             //add content
-            buttonA.textContent = "4. numbers";
-            buttonA.setAttribute("class","btn-primary")
-            buttonA.setAttribute("style","background-color:purple; border-color:purple; margin:5px;");
+            buttonD.textContent = "4. numbers";
+            buttonD.setAttribute("class","btn-primary")
+            buttonD.setAttribute("style","background-color:purple; border-color:purple; margin:5px;");
+            //add listener
+            buttonD.addEventListener("click", function() {
+                secondsLeft-10;
+                alert("Wrong Answer!");
+            })
             //append to container
-            buttonsAnswerD.appendChild(buttonA);
+            buttonsAnswerD.appendChild(buttonD);
       //append to document
       document.body.appendChild(buttonsAnswerD);
 
-
+    }       
 // LEFT OFF HERE
-            //   //creating multiple choice b) button
-            //   var buttonB = document.createElement ("button");
-            //   //add content
-            //   buttonB.textContent = "1. strings";
-            //   buttonB.setAttribute("class","btn-primary")
-            //   buttonB.setAttribute("style","background-color:purple; border-color:purple;");
-            //   //append to container
-            //   buttonContainer.appendChild(buttonB);
-      
-      
        
-    }
 
+
+  
     // question.textContent = "Commonly used data types DO NOT include:";
     // question.setAttribute("style", "text-align:left; padding: 20px; font-weight:bold; margin:auto; width:62%;");
     // buttonContainer.setAttribute("style", "margin-left:17%", "text-align:left;");
