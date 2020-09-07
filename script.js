@@ -51,7 +51,7 @@ questionsIntro.setAttribute("style", "padding:50px;");
     var introText = document.createElement ("p");
     //add content with instructions and style
     introText.textContent = "This is where all of the instructions will go";
-    introText.setAttribute("style", "text-align:center");
+    introText.setAttribute("style", "text-align:center; margin-top:20px;");
     //append and style
     questionsIntro.appendChild (introText);
 
