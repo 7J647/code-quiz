@@ -104,10 +104,39 @@ function setTime() {
 
   function questionOne() {
       question.textContent = "Commonly used data types DO NOT include:";
-      question.setAttribute("style", "margin-left: 300px; text-align:left; margin-top:20px; font-weight:bold; width:50%"); 
-  }
+      question.setAttribute("style", "text-align:left; padding: 20px; font-weight:bold; margin:auto; width:62%;");
+      buttonContainer.setAttribute("style", "margin-left:17%", "text-align:left;");
+              //creating multiple choice a) button
+              var buttonA = document.createElement ("button");
+              //add content
+              buttonA.textContent = "1. strings";
+              buttonA.setAttribute("class","btn-primary")
+              buttonA.setAttribute("style","background-color:purple; border-color:purple;");
+              //append to container
+              buttonContainer.appendChild(buttonA);
+      
+      
+       
+    }
 
-  
+
+    // var buttonContainer = document.createElement("div");
+    // //add content
+    // buttonContainer.setAttribute("style", "text-align:center");
+    //         //creating get started button
+    //         var startButton = document.createElement ("button");
+    //         //add content
+    //         startButton.textContent = "Start Quiz";
+    //         startButton.setAttribute("class","btn-primary")
+    //         startButton.setAttribute("style","background-color:purple; border-color:purple;");
+    //         //append to container
+    //          buttonContainer.appendChild(startButton);
+    
+    // //append container to body
+    // document.body.appendChild(buttonContainer);
+    
+     
+
 
 
 // //create a container to hold the first question
