@@ -103,9 +103,11 @@ function setTime() {
   //create function to start questions
 
   function questionOne() {
-      question.textContent = "This is question #1";
-      question.setAttribute("style", "margin-left: 300px; text-align:left; margin-top:20px; font-weight:bold;"); 
+      question.textContent = "Commonly used data types DO NOT include:";
+      question.setAttribute("style", "margin-left: 300px; text-align:left; margin-top:20px; font-weight:bold; width:50%"); 
   }
+
+  
 
 
 // //create a container to hold the first question
