@@ -21,7 +21,7 @@ welcomeHeader.setAttribute("style", "text-align:center");
 
 //create intro text
 var introText = document.createElement ("p");
-//add content
+//add content with instructions
 introText.textContent = "This is where all of the instructions will go";
 //append and style
 document.body.appendChild (introText);
@@ -47,4 +47,27 @@ buttonContainer.setAttribute("style", "text-align:center");
 //append container to body
 document.body.appendChild(buttonContainer);
 
+//add event listener
+startButton.addEventListener("click", function() {
+    //remove welcome headline, instructions, and button
+    welcomeHeader.textContent = "";
+    introText.textContent = "";
+    startButton.setAttribute("style", "visibility:hidden")
+})
 
+
+//create function to start quiz
+
+// function getStarted() {
+//     //remove welcome headline and instructions
+//     welcomeHeader.textContent = "";
+//     introText.textContent = "";
+    
+//     //create first question
+//     var firstQuestion = document.createElement("h1");
+    
+//     //add content
+//     firstQuestion.textContent = "Commonly used data types do NOT include"
+//     firstQuestion.setAttribute ("style, margin-left: 33.3%")
+
+// }
