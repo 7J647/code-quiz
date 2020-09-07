@@ -19,7 +19,13 @@ welcomeHeader.textContent = "Welcome to the Quiz!";
 document.body.appendChild (welcomeHeader);
 welcomeHeader.setAttribute("style", "text-align:center");
 
-
+//create intro text
+var introText = document.createElement ("p");
+//add content
+introText.textContent = "This is where all of the instructions will go";
+//append and style
+document.body.appendChild (introText);
+introText.setAttribute("style", "text-align:center");
 
 
 
