@@ -41,8 +41,8 @@ questionsIntro.setAttribute("style", "padding:50px;");
     //create welcome header/questions text
     var question = document.createElement ("h1");
     //add content and style
-    question.textContent = "Welcome to the Quiz!";
-    question.setAttribute("style", "text-align:center;");
+    question.textContent = "Coding Quiz Challenge";
+    question.setAttribute("style", "text-align:center; font-weight:bold;");
 
     //append to questions/intro text container
     questionsIntro.appendChild (question);
@@ -85,7 +85,6 @@ startButton.addEventListener("click", function() {
 })
 
 //create function to start timer countdown
-
 var secondsLeft = 60
 
 function setTime() {
@@ -99,6 +98,8 @@ function setTime() {
   
     }, 1000);
   }
+
+  //create function to start questions
 
   function questionOne() {
       question.textContent = "This is question #1";
