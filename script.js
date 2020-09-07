@@ -42,7 +42,7 @@ questionsIntro.setAttribute("style", "padding:50px;");
     var question = document.createElement ("h1");
     //add content and style
     question.textContent = "Coding Quiz Challenge";
-    question.setAttribute("style", "text-align:center; font-weight:bold;");
+    question.setAttribute("style", "text-align:center; font-weight:bold; padding:20px;");
 
     //append to questions/intro text container
     questionsIntro.appendChild (question);
@@ -52,7 +52,7 @@ questionsIntro.setAttribute("style", "padding:50px;");
     var introText = document.createElement ("p");
     //add content with instructions and style
     introText.textContent = "Try to answer the following code-related questions within the time limit.  Keep in mind that incorrect answers will penalize your score/time by ten seconds!";
-    introText.setAttribute("style", "text-align:center; margin-top:20px; margin:auto; width:50%;");
+    introText.setAttribute("style", "text-align:center; margin:auto; width:50%;");
     //append and style
     questionsIntro.appendChild (introText);
 
