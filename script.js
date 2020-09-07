@@ -1,7 +1,7 @@
 // console.log("hello world");
 
 //pseudocode
-//1) welcome user and present rules
+//1) welcome user and present rules, show timer clock
 //2) click start button and timer countdown begins
 //3)  question presented (multiple choice)
 //4)  question answered 
@@ -10,6 +10,33 @@
 //7)  else present next question and repeat 4-6 above
 //8)  if all questions answered or timer = 0 end game
 //9)  user has option to save initials and store score
+
+//create the timer
+var timer = document.createElement ("div");
+
+//add content
+timer.textContent = "You will have 60 seconds to complete";
+timer.setAttribute("style", "font-size:medium; text-align:right; margin-right:20px;");
+
+//append to body
+document.body.appendChild(timer);
+
+
+
+// var secondsLeft = 60
+
+// function setTime() {
+//     var timerInterval = setInterval(function() {
+//       secondsLeft--;
+//       timeEl.textContent = "Time Remaining = " + secondsLeft;
+  
+//       if(secondsLeft === 0) {
+//         clearInterval(timerInterval);
+//         sendMessage();
+//       }
+  
+//     }, 1000);
+//   }
 
 //create welcome header
 var welcomeHeader = document.createElement ("h1");
@@ -54,6 +81,15 @@ startButton.addEventListener("click", function() {
     introText.textContent = "";
     startButton.setAttribute("style", "visibility:hidden")
 })
+
+//create a container to hold the first question
+var questionContainer = document.createElement ("div");
+
+//add content
+
+    var questionOne = document.createElement ("h1");
+
+
 
 
 //create function to start quiz
