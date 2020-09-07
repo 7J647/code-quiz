@@ -1,4 +1,4 @@
-console.log("hello world");
+// console.log("hello world");
 
 //pseudocode
 //1) welcome user and present rules
@@ -10,3 +10,34 @@ console.log("hello world");
 //7)  else present next question and repeat 4-6 above
 //8)  if all questions answered or timer = 0 end game
 //9)  user has option to save initials and store score
+
+//create welcome header
+var welcomeHeader = document.createElement ("h1");
+//add content
+welcomeHeader.textContent = "Welcome to the Quiz!";
+//append and style
+document.body.appendChild (welcomeHeader);
+welcomeHeader.setAttribute("style", "text-align:center");
+
+
+
+
+
+// //creating container for welcome screen
+// var welcomeScreen = document.createElement("div");
+
+// //adding content
+// welcomeScreen.setAttribute("style", "textalign:center;");
+// //append to body
+// document.body.appendChild(welcomeScreen);
+
+//     //creating h1 header
+//     var welcomeText = welcomeScreen.createElement("h1");
+//     //adding text content
+//     welcomeText.textContent = "Welcome to the Quiz";
+//     //appending to existing element
+//     welcomeScreen.appendChild(welcomeText);
+
+//     //creating text explaining quiz
+//     var explainText = welcomeScreen.createElement("p");
+
