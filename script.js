@@ -13,30 +13,11 @@
 
 //create the timer
 var timer = document.createElement ("div");
-
 //add content
-timer.textContent = "You will have 60 seconds to complete";
+timer.textContent = "Time Remaining = 60 seconds";
 timer.setAttribute("style", "font-size:medium; text-align:right; margin-right:20px;");
-
 //append to body
 document.body.appendChild(timer);
-
-
-
-// var secondsLeft = 60
-
-// function setTime() {
-//     var timerInterval = setInterval(function() {
-//       secondsLeft--;
-//       timeEl.textContent = "Time Remaining = " + secondsLeft;
-  
-//       if(secondsLeft === 0) {
-//         clearInterval(timerInterval);
-//         sendMessage();
-//       }
-  
-//     }, 1000);
-//   }
 
 //create welcome header
 var welcomeHeader = document.createElement ("h1");
@@ -56,18 +37,14 @@ introText.setAttribute("style", "text-align:center");
 
 //create container to center button
 var buttonContainer = document.createElement("div");
-
 //add content
 buttonContainer.setAttribute("style", "text-align:center");
-
         //creating get started button
         var startButton = document.createElement ("button");
-
         //add content
         startButton.textContent = "Start Quiz";
         startButton.setAttribute("class","btn-primary")
         startButton.setAttribute("style","background-color:purple; border-color:purple;");
-        
         //append to container
          buttonContainer.appendChild(startButton);
 
@@ -80,14 +57,32 @@ startButton.addEventListener("click", function() {
     welcomeHeader.textContent = "";
     introText.textContent = "";
     startButton.setAttribute("style", "visibility:hidden")
+    setTime()
 })
 
-//create a container to hold the first question
-var questionContainer = document.createElement ("div");
+//create function to start timer countdown
 
-//add content
+var secondsLeft = 60
 
-    var questionOne = document.createElement ("h1");
+function setTime() {
+    var timerInterval = setInterval(function() {
+      secondsLeft--;
+      timer.textContent = "Time Remaining = " + secondsLeft + " seconds";
+  
+      if(secondsLeft === 0) {
+        clearInterval(timerInterval);
+      }
+  
+    }, 1000);
+  }
+
+
+// //create a container to hold the first question
+// var questionContainer = document.createElement ("div");
+
+// //add content
+
+//     var questionOne = document.createElement ("h1");
 
 
 
