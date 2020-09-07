@@ -47,11 +47,12 @@ questionsIntro.setAttribute("style", "padding:50px;");
     //append to questions/intro text container
     questionsIntro.appendChild (question);
 
+
     //create intro text
     var introText = document.createElement ("p");
     //add content with instructions and style
-    introText.textContent = "This is where all of the instructions will go";
-    introText.setAttribute("style", "text-align:center; margin-top:20px;");
+    introText.textContent = "Try to answer the following code-related questions within the time limit.  Keep in mind that incorrect answers will penalize your score/time by ten seconds!";
+    introText.setAttribute("style", "text-align:center; margin-top:20px; margin:auto; width:50%;");
     //append and style
     questionsIntro.appendChild (introText);
 
