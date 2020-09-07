@@ -104,7 +104,7 @@ function setTime() {
 
   function questionOne() {
       question.textContent = "This is question #1";
-      question.setAttribute("style", "margin-left: 300px; text-align:left;"); 
+      question.setAttribute("style", "margin-left: 300px; text-align:left; margin-top:20px; font-weight:bold;"); 
   }
 
 
