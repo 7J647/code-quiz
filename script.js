@@ -27,23 +27,24 @@ introText.textContent = "This is where all of the instructions will go";
 document.body.appendChild (introText);
 introText.setAttribute("style", "text-align:center");
 
+//create container to center button
+var buttonContainer = document.createElement("div");
 
+//add content
+buttonContainer.setAttribute("style", "text-align:center");
 
-// //creating container for welcome screen
-// var welcomeScreen = document.createElement("div");
+        //creating get started button
+        var startButton = document.createElement ("button");
 
-// //adding content
-// welcomeScreen.setAttribute("style", "textalign:center;");
-// //append to body
-// document.body.appendChild(welcomeScreen);
+        //add content
+        startButton.textContent = "Start Quiz";
+        startButton.setAttribute("class","btn-primary")
+        startButton.setAttribute("style","background-color:purple; border-color:purple;");
+        
+        //append to container
+         buttonContainer.appendChild(startButton);
 
-//     //creating h1 header
-//     var welcomeText = welcomeScreen.createElement("h1");
-//     //adding text content
-//     welcomeText.textContent = "Welcome to the Quiz";
-//     //appending to existing element
-//     welcomeScreen.appendChild(welcomeText);
+//append container to body
+document.body.appendChild(buttonContainer);
 
-//     //creating text explaining quiz
-//     var explainText = welcomeScreen.createElement("p");
 
