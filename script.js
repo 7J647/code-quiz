@@ -588,5 +588,18 @@ function questionFour() {
   function allDone() {
     question.textContent = "All done!";
     question.setAttribute("style", "text-align:left; padding: 20px; font-weight:bold; margin:auto; width:62%;");
+    
+    // create div to hold outro text
+    var questionsOutro = document.createElement ("div");
+    //add styling to div
+    questionsOutro.setAttribute("style", "text-align:left; padding: 20px; font-weight:bold; margin:auto; width:58%;");
+     
+        //create outro text
+        var outroText = document.createElement ("p");
+        //add content with instructions and style
+        outroText.textContent = "Your final score is " + secondsLeft;
+        //append to div
+        questionsOutro.appendChild(outroText);
+    //append 
+    document.body.appendChild(questionsOutro);
   } 
-
