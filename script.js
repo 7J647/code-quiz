@@ -18,6 +18,7 @@ var scoreTimer = document.createElement ("div");
     var highScore = document.createElement ("div");
     highScore.textContent = "View High Scores";
     highScore.setAttribute("style", "font-size:medium; text-align:left; margin-left:20px; float:left;")
+
     //append to container
     scoreTimer.appendChild(highScore);
 
@@ -96,9 +97,21 @@ function setTime() {
       if(secondsLeft === 0) {
         clearInterval(timerInterval);
       }
+
+      if (secondsLeft === 0) {
+          alert("Sorry, your time has expired!");
+      }
   
     }, 1000);
   }
+//create function to stop timer countdown on completion
+//   function stopInterval() {
+//     clearInterval(timerInterval);
+//   }
+
+// create variable to log timer on correctly answering the 5th question
+
+
 
   //create function to start questions
 
@@ -539,9 +552,16 @@ function questionFour() {
           buttonD.textContent = "4. console.log";
           buttonD.setAttribute("class","btn-primary")
           buttonD.setAttribute("style","background-color:purple; border-color:purple; margin:5px;");
+          buttonD.setAttribute("href", "./score.html")
           //add listener
           buttonD.addEventListener("click", function() {
             alert("Correct!");
+            // stopInterval()
+            // ButtonA.setAttribute("style", "visibility:hidden")
+            // ButtonB.setAttribute("style", "visibility:hidden")
+            // ButtonC.setAttribute("style", "visibility:hidden")
+            // ButtonD.setAttribute("style", "visibility:hidden")
+            // allDone()
         })  
           //append to container
           buttonsAnswerD.appendChild(buttonD);
@@ -552,125 +572,5 @@ function questionFour() {
 
   //LEFT OFF HERE
 
-//   "A very useful tool used during development and debugging for printing content to the debugger is:"
-    // question.textContent = "Commonly used data types DO NOT include:";
-    // question.setAttribute("style", "text-align:left; padding: 20px; font-weight:bold; margin:auto; width:62%;");
-    // buttonContainer.setAttribute("style", "margin-left:17%", "text-align:left;");
-    //         //creating multiple choice a) button
-    //         var buttonA = document.createElement ("button");
-    //         //add content
-    //         buttonA.textContent = "1. strings";
-    //         buttonA.setAttribute("class","btn-primary")
-    //         buttonA.setAttribute("style","background-color:purple; border-color:purple;");
-    //         //append to container
-    //         buttonContainer.appendChild(buttonA);
-
-    //         //creating multiple choice b) button
-    //         var buttonB = document.createElement ("button");
-    //         //add content
-    //         buttonB.textContent = "1. strings";
-    //         buttonB.setAttribute("class","btn-primary")
-    //         buttonB.setAttribute("style","background-color:purple; border-color:purple;");
-    //         //append to container
-    //         buttonContainer.appendChild(buttonB);
-    
-     
 
 
-
-// //create a container to hold the first question
-// var questionContainer = document.createElement ("div");
-
-// //add content
-
-//     var questionOne = document.createElement ("h1");
-
-
-
-
-//create function to start quiz
-
-// function getStarted() {
-//     //remove welcome headline and instructions
-//     welcomeHeader.textContent = "";
-//     introText.textContent = "";
-    
-//     //create first question
-//     var firstQuestion = document.createElement("h1");
-    
-//     //add content
-//     firstQuestion.textContent = "Commonly used data types do NOT include"
-//     firstQuestion.setAttribute ("style, margin-left: 33.3%")
-
-// }
-
-//create function to start timer countdown
-
-var secondsLeft = 60
-
-function setTime() {
-    var timerInterval = setInterval(function() {
-      secondsLeft--;
-      timer.textContent = "Time Remaining = " + secondsLeft + " seconds";
-  
-      if(secondsLeft === 0) {
-        clearInterval(timerInterval);
-      }
-  
-    }, 1000);
-  }
-
-
-
-    // //create container to hold question and buttons, roughtly 1/3 over from the left
-    // var questionContainer = document.createElement("div");
-    // //add content
-    // buttonContainer.setAttribute("style", "margin-left:33.3%");
-    //     //create question
-    //     var codeQuestions = document.createElement "h1";
-    //     //add content to question
-    //     codeQuestions.textContent = "This is the first question of the quiz";
-    //     //append to the container
-    //     questionContainer.appendChild(codeQuestions);
-    // //append container to document
-    // document.body.appendChild(questionContainer);
-
-        //create question 
-
-
-
-// //create welcome header
-// var welcomeHeader = document.createElement ("h1");
-// //add content
-// welcomeHeader.textContent = "Welcome to the Quiz!";
-// //append and style
-// document.body.appendChild (welcomeHeader);
-// welcomeHeader.setAttribute("style", "text-align:center");
-
-
-
-// //create a container to hold the first question
-// var questionContainer = document.createElement ("div");
-
-// //add content
-
-//     var questionOne = document.createElement ("h1");
-
-
-
-
-//create function to start quiz
-
-// function getStarted() {
-//     //remove welcome headline and instructions
-//     welcomeHeader.textContent = "";
-//     introText.textContent = "";
-    
-//     //create first question
-//     var firstQuestion = document.createElement("h1");
-    
-//     //add content
-//     firstQuestion.textContent = "Commonly used data types do NOT include"
-//     firstQuestion.setAttribute ("style, margin-left: 33.3%")
-
-// }
