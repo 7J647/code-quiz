@@ -561,7 +561,6 @@ function questionFour() {
           buttonD.addEventListener("click", function() {
             alert("Correct!");
             clearInterval(timerInterval);
-            alert("Your final score is: " + secondsLeft);
             buttonA.remove();
             buttonB.remove();
             buttonC.remove();
@@ -607,12 +606,21 @@ function questionFour() {
     var submitName = document.createElement ("div");
     //add styling for indentation matching
     submitName.setAttribute("style", "text-align:left; padding: 20px; font-weight:bold; margin:auto; width:58%;");
+        
         //create div for "Enter Initials" text
         var enterInitials = document.createElement("p");
         //add content for instructions
         enterInitials.textContent = "Enter Initials:"; 
+        enterInitials.setAttribute("style","float:left");
         //append to div
         submitName.appendChild(enterInitials);
+
+        //create text box to go next to Enter Initials text
+        var initialsBox = document.createElement("textarea");
+        //add content and float left to go next to text
+        initialsBox.setAttribute("style","float:left; margin-left: 5px; height: 20px;");
+        //append to div
+        submitName.appendChild(initialsBox);
       
     //append
     document.body.appendChild(submitName);
