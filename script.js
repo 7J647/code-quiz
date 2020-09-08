@@ -629,8 +629,23 @@ function questionFour() {
         submitButton.setAttribute("class","btn-primary")
         submitButton.setAttribute("style","background-color:purple; border-color:purple; margin-left: 5px; float:left;");
         submitButton.setAttribute("href", "./score.html")
+        //add listener
+        submitButton.addEventListener("click", function(event) {
+          // event.preventDefault();   IT LOOKED LIKE THIS WAS NOT NEEDED.
+          // console.log("You submitted the form");
+          alert("You have submitted your initials.  Thank you for participating!")
+        });
+    
+        //append to div
         submitName.appendChild(submitButton);
-      
+    
     //append
     document.body.appendChild(submitName);
   } 
+
+
+
+  // enterInitials.textContent = "You have submitted your initials with your score.  Thank you for participating!";
+  // initialsBox.remove();
+  // submitButton.remove();
+  
