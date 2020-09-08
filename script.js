@@ -86,11 +86,18 @@ startButton.addEventListener("click", function() {
     questionOne()
 })
 
-//create function to start timer countdown
+//create variable for timer countdown
 var secondsLeft = 60
 
+//create variable to store final time as user's final score.
+var finalScore = secondsLeft
+
+//move variable outside of the function
+var timerInterval = "";
+
+//create function to start timer countdown
 function setTime() {
-    var timerInterval = setInterval(function() {
+      timerInterval = setInterval(function() {
       secondsLeft--;
       timer.textContent = "Time Remaining = " + secondsLeft + " seconds";
   
@@ -556,6 +563,8 @@ function questionFour() {
           //add listener
           buttonD.addEventListener("click", function() {
             alert("Correct!");
+
+            
             // stopInterval()
             // ButtonA.setAttribute("style", "visibility:hidden")
             // ButtonB.setAttribute("style", "visibility:hidden")
