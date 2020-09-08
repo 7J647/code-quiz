@@ -195,7 +195,97 @@ function setTime() {
 // LEFT OFF HERE
        
 function questionTwo() {
-    question.textContent = "Arrays in Javascript can be used to store '___________________'";
+    question.textContent = "The conditon of an if/else statement is enclosed within ____________";
+    question.setAttribute("style", "text-align:left; padding: 20px; font-weight:bold; margin:auto; width:62%;");
+     
+    //creating a container for each button, starting with button a
+    var buttonsAnswerA = document.createElement("div");
+    //add content
+    buttonsAnswerA.setAttribute("style", "margin-left:22%", "text-align:left;");
+          //creating multiple choice a) button
+          var buttonA = document.createElement ("button");
+          //add content
+          buttonA.textContent = "1. quotes";
+          buttonA.setAttribute("class","btn-primary")
+          buttonA.setAttribute("style","background-color:purple; border-color:purple; margin:5px;");
+          //add listener
+          buttonA.addEventListener("click", function() {
+              alert("Wrong Answer!");
+          })
+
+          //append to container
+          buttonsAnswerA.appendChild(buttonA);
+    //append to document
+    document.body.appendChild(buttonsAnswerA);
+
+
+    //creating a container for button b
+    var buttonsAnswerB = document.createElement("div");
+    //add content
+    buttonsAnswerB.setAttribute("style", "margin-left:22%", "text-align:left;");
+          //creating multiple choice a) button
+          var buttonB = document.createElement ("button");
+          //add content
+          buttonB.textContent = "2. curly brackets";
+          buttonB.setAttribute("class","btn-primary")
+          buttonB.setAttribute("style","background-color:purple; border-color:purple; margin:5px;");
+          //add listener
+          buttonB.addEventListener("click", function() {
+              secondsLeft-10;
+              alert("Wrong Answer!");
+          })
+          //append to container
+          buttonsAnswerB.appendChild(buttonB);
+    //append to document
+    document.body.appendChild(buttonsAnswerB);
+ 
+    //creating a container for button c
+    var buttonsAnswerC = document.createElement("div");
+    //add content
+    buttonsAnswerC.setAttribute("style", "margin-left:22%", "text-align:left;");
+          //creating multiple choice a) button
+          var buttonC = document.createElement ("button");
+          //add content
+          buttonC.textContent = "3. parentheses";
+          buttonC.setAttribute("class","btn-primary")
+          buttonC.setAttribute("style","background-color:purple; border-color:purple; margin:5px;");
+          //add listener
+          buttonC.addEventListener("click", function() {
+              alert("Correct!");
+            buttonA.remove();
+            buttonB.remove();
+            buttonC.remove();
+            buttonD.remove();
+            questionThree()
+          })
+          //append to container
+          buttonsAnswerC.appendChild(buttonC);
+    //append to document
+    document.body.appendChild(buttonsAnswerC);
+
+    //creating a container for button d
+    var buttonsAnswerD = document.createElement("div");
+    //add content
+    buttonsAnswerD.setAttribute("style", "margin-left:22%", "text-align:left;");
+          //creating multiple choice a) button
+          var buttonD = document.createElement ("button");
+          //add content
+          buttonD.textContent = "4. square brackets";
+          buttonD.setAttribute("class","btn-primary")
+          buttonD.setAttribute("style","background-color:purple; border-color:purple; margin:5px;");
+          //add listener
+          buttonD.addEventListener("click", function() {
+            alert("Wrong Answer!");
+        })  
+          //append to container
+          buttonsAnswerD.appendChild(buttonD);
+    //append to document
+    document.body.appendChild(buttonsAnswerD);
+
+  }  
+
+   function questionThree() {
+    question.textContent = "Arrays in Javascript can be used to store_________:";
     question.setAttribute("style", "text-align:left; padding: 20px; font-weight:bold; margin:auto; width:62%;");
      
     //creating a container for each button, starting with button a
@@ -275,17 +365,107 @@ function questionTwo() {
             buttonB.remove();
             buttonC.remove();
             buttonD.remove();
-            questionThree()
+            questionFour()
         })  
           //append to container
           buttonsAnswerD.appendChild(buttonD);
     //append to document
     document.body.appendChild(buttonsAnswerD);
 
-  }  
-   //LEFT OFF HERE
+  } 
 
-   function questionThree() {
+
+function questionFour() {
+    question.textContent = "String values must be enclosed within ______ when being assigned to variables:";
+    question.setAttribute("style", "text-align:left; padding: 20px; font-weight:bold; margin:auto; width:62%;");
+     
+    //creating a container for each button, starting with button a
+    var buttonsAnswerA = document.createElement("div");
+    //add content
+    buttonsAnswerA.setAttribute("style", "margin-left:22%", "text-align:left;");
+          //creating multiple choice a) button
+          var buttonA = document.createElement ("button");
+          //add content
+          buttonA.textContent = "1. commas";
+          buttonA.setAttribute("class","btn-primary")
+          buttonA.setAttribute("style","background-color:purple; border-color:purple; margin:5px;");
+          //add listener
+          buttonA.addEventListener("click", function() {
+              alert("Wrong Answer!");
+          })
+
+          //append to container
+          buttonsAnswerA.appendChild(buttonA);
+    //append to document
+    document.body.appendChild(buttonsAnswerA);
+
+
+    //creating a container for button b
+    var buttonsAnswerB = document.createElement("div");
+    //add content
+    buttonsAnswerB.setAttribute("style", "margin-left:22%", "text-align:left;");
+          //creating multiple choice a) button
+          var buttonB = document.createElement ("button");
+          //add content
+          buttonB.textContent = "2. curly brackets";
+          buttonB.setAttribute("class","btn-primary")
+          buttonB.setAttribute("style","background-color:purple; border-color:purple; margin:5px;");
+          //add listener
+          buttonB.addEventListener("click", function() {
+              secondsLeft-10;
+              alert("Wrong Answer!");
+          })
+          //append to container
+          buttonsAnswerB.appendChild(buttonB);
+    //append to document
+    document.body.appendChild(buttonsAnswerB);
+ 
+    //creating a container for button c
+    var buttonsAnswerC = document.createElement("div");
+    //add content
+    buttonsAnswerC.setAttribute("style", "margin-left:22%", "text-align:left;");
+          //creating multiple choice a) button
+          var buttonC = document.createElement ("button");
+          //add content
+          buttonC.textContent = "3. quotes";
+          buttonC.setAttribute("class","btn-primary")
+          buttonC.setAttribute("style","background-color:purple; border-color:purple; margin:5px;");
+          //add listener
+          buttonC.addEventListener("click", function() {
+            alert("Correct!");
+            buttonA.remove();
+            buttonB.remove();
+            buttonC.remove();
+            buttonD.remove();
+            questionFive()
+          })
+          //append to container
+          buttonsAnswerC.appendChild(buttonC);
+    //append to document
+    document.body.appendChild(buttonsAnswerC);
+
+    //creating a container for button d
+    var buttonsAnswerD = document.createElement("div");
+    //add content
+    buttonsAnswerD.setAttribute("style", "margin-left:22%", "text-align:left;");
+          //creating multiple choice a) button
+          var buttonD = document.createElement ("button");
+          //add content
+          buttonD.textContent = "4. parentheses";
+          buttonD.setAttribute("class","btn-primary")
+          buttonD.setAttribute("style","background-color:purple; border-color:purple; margin:5px;");
+          //add listener
+          buttonD.addEventListener("click", function() {
+            alert("Wrong Answer!");
+        })  
+          //append to container
+          buttonsAnswerD.appendChild(buttonD);
+    //append to document
+    document.body.appendChild(buttonsAnswerD);
+
+  } 
+
+  function questionFive() {
     question.textContent = "A very useful tool used during development and debugging for printing content to the debugger is:";
     question.setAttribute("style", "text-align:left; padding: 20px; font-weight:bold; margin:auto; width:62%;");
      
@@ -317,7 +497,7 @@ function questionTwo() {
           //creating multiple choice a) button
           var buttonB = document.createElement ("button");
           //add content
-          buttonB.textContent = "2. Terminal/Bash";
+          buttonB.textContent = "2. terminal/bash";
           buttonB.setAttribute("class","btn-primary")
           buttonB.setAttribute("style","background-color:purple; border-color:purple; margin:5px;");
           //add listener
@@ -342,7 +522,7 @@ function questionTwo() {
           buttonC.setAttribute("style","background-color:purple; border-color:purple; margin:5px;");
           //add listener
           buttonC.addEventListener("click", function() {
-              alert("Wrong Answer!");
+            alert("Wrong Answer!");
           })
           //append to container
           buttonsAnswerC.appendChild(buttonC);
@@ -362,11 +542,6 @@ function questionTwo() {
           //add listener
           buttonD.addEventListener("click", function() {
             alert("Correct!");
-            buttonA.remove();
-            buttonB.remove();
-            buttonC.remove();
-            buttonD.remove();
-            questionFour()
         })  
           //append to container
           buttonsAnswerD.appendChild(buttonD);
@@ -375,11 +550,9 @@ function questionTwo() {
 
   } 
 
-//LEFT OFF HERE
+  //LEFT OFF HERE
 
-
-
-   
+//   "A very useful tool used during development and debugging for printing content to the debugger is:"
     // question.textContent = "Commonly used data types DO NOT include:";
     // question.setAttribute("style", "text-align:left; padding: 20px; font-weight:bold; margin:auto; width:62%;");
     // buttonContainer.setAttribute("style", "margin-left:17%", "text-align:left;");
