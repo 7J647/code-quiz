@@ -596,10 +596,24 @@ function questionFour() {
      
         //create outro text
         var outroText = document.createElement ("p");
-        //add content with instructions and style
+        //add content with text and final score
         outroText.textContent = "Your final score is " + secondsLeft;
         //append to div
         questionsOutro.appendChild(outroText);
     //append 
     document.body.appendChild(questionsOutro);
+
+    //create div to hold text box
+    var submitName = document.createElement ("div");
+    //add styling for indentation matching
+    submitName.setAttribute("style", "text-align:left; padding: 20px; font-weight:bold; margin:auto; width:58%;");
+        //create div for "Enter Initials" text
+        var enterInitials = document.createElement("p");
+        //add content for instructions
+        enterInitials.textContent = "Enter Initials:"; 
+        //append to div
+        submitName.appendChild(enterInitials);
+      
+    //append
+    document.body.appendChild(submitName);
   } 
