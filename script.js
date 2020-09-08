@@ -285,9 +285,97 @@ function questionTwo() {
   }  
    //LEFT OFF HERE
 
-  
+   function questionThree() {
+    question.textContent = "A very useful tool used during development and debugging for printing content to the debugger is:";
+    question.setAttribute("style", "text-align:left; padding: 20px; font-weight:bold; margin:auto; width:62%;");
+     
+    //creating a container for each button, starting with button a
+    var buttonsAnswerA = document.createElement("div");
+    //add content
+    buttonsAnswerA.setAttribute("style", "margin-left:22%", "text-align:left;");
+          //creating multiple choice a) button
+          var buttonA = document.createElement ("button");
+          //add content
+          buttonA.textContent = "1. Javascript";
+          buttonA.setAttribute("class","btn-primary")
+          buttonA.setAttribute("style","background-color:purple; border-color:purple; margin:5px;");
+          //add listener
+          buttonA.addEventListener("click", function() {
+              alert("Wrong Answer!");
+          })
+
+          //append to container
+          buttonsAnswerA.appendChild(buttonA);
+    //append to document
+    document.body.appendChild(buttonsAnswerA);
 
 
+    //creating a container for button b
+    var buttonsAnswerB = document.createElement("div");
+    //add content
+    buttonsAnswerB.setAttribute("style", "margin-left:22%", "text-align:left;");
+          //creating multiple choice a) button
+          var buttonB = document.createElement ("button");
+          //add content
+          buttonB.textContent = "2. Terminal/Bash";
+          buttonB.setAttribute("class","btn-primary")
+          buttonB.setAttribute("style","background-color:purple; border-color:purple; margin:5px;");
+          //add listener
+          buttonB.addEventListener("click", function() {
+              secondsLeft-10;
+              alert("Wrong Answer!");
+          })
+          //append to container
+          buttonsAnswerB.appendChild(buttonB);
+    //append to document
+    document.body.appendChild(buttonsAnswerB);
+ 
+    //creating a container for button c
+    var buttonsAnswerC = document.createElement("div");
+    //add content
+    buttonsAnswerC.setAttribute("style", "margin-left:22%", "text-align:left;");
+          //creating multiple choice a) button
+          var buttonC = document.createElement ("button");
+          //add content
+          buttonC.textContent = "3. for loops";
+          buttonC.setAttribute("class","btn-primary")
+          buttonC.setAttribute("style","background-color:purple; border-color:purple; margin:5px;");
+          //add listener
+          buttonC.addEventListener("click", function() {
+              alert("Wrong Answer!");
+          })
+          //append to container
+          buttonsAnswerC.appendChild(buttonC);
+    //append to document
+    document.body.appendChild(buttonsAnswerC);
+
+    //creating a container for button d
+    var buttonsAnswerD = document.createElement("div");
+    //add content
+    buttonsAnswerD.setAttribute("style", "margin-left:22%", "text-align:left;");
+          //creating multiple choice a) button
+          var buttonD = document.createElement ("button");
+          //add content
+          buttonD.textContent = "4. console.log";
+          buttonD.setAttribute("class","btn-primary")
+          buttonD.setAttribute("style","background-color:purple; border-color:purple; margin:5px;");
+          //add listener
+          buttonD.addEventListener("click", function() {
+            alert("Correct!");
+            buttonA.remove();
+            buttonB.remove();
+            buttonC.remove();
+            buttonD.remove();
+            questionFour()
+        })  
+          //append to container
+          buttonsAnswerD.appendChild(buttonD);
+    //append to document
+    document.body.appendChild(buttonsAnswerD);
+
+  } 
+
+//LEFT OFF HERE
 
 
 
