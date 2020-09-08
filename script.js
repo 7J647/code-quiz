@@ -562,6 +562,11 @@ function questionFour() {
             alert("Correct!");
             clearInterval(timerInterval);
             alert("Your final score is: " + secondsLeft);
+            buttonA.remove();
+            buttonB.remove();
+            buttonC.remove();
+            buttonD.remove();
+            allDone()
 
 
             // stopInterval()
@@ -580,5 +585,8 @@ function questionFour() {
 
   //LEFT OFF HERE
 
-
+  function allDone() {
+    question.textContent = "All done!";
+    question.setAttribute("style", "text-align:left; padding: 20px; font-weight:bold; margin:auto; width:62%;");
+  } 
 
