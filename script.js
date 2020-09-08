@@ -602,7 +602,7 @@ function questionFour() {
     //append 
     document.body.appendChild(questionsOutro);
 
-    //create div to hold text box
+    //create div to hold text box and submit button
     var submitName = document.createElement ("div");
     //add styling for indentation matching
     submitName.setAttribute("style", "text-align:left; padding: 20px; font-weight:bold; margin:auto; width:58%;");
@@ -618,9 +618,18 @@ function questionFour() {
         //create text box to go next to Enter Initials text
         var initialsBox = document.createElement("textarea");
         //add content and float left to go next to text
-        initialsBox.setAttribute("style","float:left; margin-left: 5px; height: 20px;");
+        initialsBox.setAttribute("style","float:left; margin-left: 5px; height: 30px;");
         //append to div
         submitName.appendChild(initialsBox);
+
+        //create submit button
+        var submitButton = document.createElement("button")
+        //add content and float left
+        submitButton.textContent = "Submit";
+        submitButton.setAttribute("class","btn-primary")
+        submitButton.setAttribute("style","background-color:purple; border-color:purple; margin-left: 5px; float:left;");
+        submitButton.setAttribute("href", "./score.html")
+        submitName.appendChild(submitButton);
       
     //append
     document.body.appendChild(submitName);
