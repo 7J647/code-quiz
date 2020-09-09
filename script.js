@@ -637,8 +637,13 @@ function questionFour() {
             submitButton.addEventListener("click", function(event) {
             event.preventDefault();   
             console.log("You submitted the form");
-            alert("You have submitted your initials.  Thank you for participating!");
+            alert("You have submitted your initials.  To take the quiz again, just hit refresh!");
                  });
+
+            //local storage
+            // submitButton.addEventListener = "Store";
+
+
             //append
             initialsBox.appendChild(submitButton)
 
