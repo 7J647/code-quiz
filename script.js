@@ -615,37 +615,38 @@ function questionFour() {
         //append to div
         submitName.appendChild(enterInitials);
 
-        //create text box to go next to Enter Initials text
-        var initialsBox = document.createElement("textarea");
+        //create form with button to go next to Enter Initials text
+        var initialsBox = document.createElement("form");
         //add content and float left to go next to text
-        initialsBox.setAttribute("style","float:left; margin-left: 5px; height: 30px;");
+        initialsBox.setAttribute("style","float:left; margin-left: 5px;");
+
+            //create text box
+            var enterHere = document.createElement("textarea");
+            //add content
+            enterHere.setAttribute("style","float:left; margin-left: 5px; height: 30px;");
+            //append
+            initialsBox.appendChild(enterHere);
+       
+            //create submit button
+            var submitButton = document.createElement("button");
+            //add content and float left
+            submitButton.textContent = "Submit";
+            submitButton.setAttribute("class","btn-primary")
+            submitButton.setAttribute("style","background-color:purple; border-color:purple; margin-left: 5px; float:left;");
+            //add listening event
+            submitButton.addEventListener("click", function(event) {
+            event.preventDefault();   
+            console.log("You submitted the form");
+            alert("You have submitted your initials.  Thank you for participating!");
+                 });
+            //append
+            initialsBox.appendChild(submitButton)
+
         //append to div
         submitName.appendChild(initialsBox);
 
-        //create submit button
-        var submitButton = document.createElement("button")
-        //add content and float left
-        submitButton.textContent = "Submit";
-        submitButton.setAttribute("class","btn-primary")
-        submitButton.setAttribute("style","background-color:purple; border-color:purple; margin-left: 5px; float:left;");
-        submitButton.setAttribute("href", "./score.html")
-        //add listener
-        submitButton.addEventListener("click", function(event) {
-          // event.preventDefault();   IT LOOKED LIKE THIS WAS NOT NEEDED.
-          // console.log("You submitted the form");
-          alert("You have submitted your initials.  Thank you for participating!")
-        });
-    
-        //append to div
-        submitName.appendChild(submitButton);
-    
-    //append
+    //append to div
     document.body.appendChild(submitName);
   } 
 
-
-
-  // enterInitials.textContent = "You have submitted your initials with your score.  Thank you for participating!";
-  // initialsBox.remove();
-  // submitButton.remove();
-  
+        
