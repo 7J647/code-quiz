@@ -636,7 +636,7 @@ function questionFour() {
             // console.log("You submitted the form");
             console.log(enterHere.value);
             console.log(secondsLeft);
-            alert("You have submitted your initials.  To take the quiz again, just hit refresh!");
+            alert("You have submitted your initials and score.  To take the quiz again, just hit refresh!");
             
             //initials and score saved to local storage
             localStorage.setItem("FinalScores", enterHere.value + " had a score of " + secondsLeft);
