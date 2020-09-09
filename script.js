@@ -18,6 +18,8 @@ var scoreTimer = document.createElement ("div");
     var highScore = document.createElement ("div");
     highScore.textContent = "View High Scores";
     highScore.setAttribute("style", "font-size:medium; text-align:left; margin-left:20px; float:left;")
+    //trying to get a link here
+    // highScore.setAttribute("href", "/index2.html;")
 
     //append to container
     scoreTimer.appendChild(highScore);
@@ -103,7 +105,7 @@ function setTime() {
       }
 
       if (secondsLeft === 0) {
-          alert("Sorry, your time has expired!");
+          alert("Sorry, your time has expired!  Your score is 0");
       }
   
     }, 1000);
@@ -136,6 +138,7 @@ function setTime() {
             //add listener
             buttonA.addEventListener("click", function() {
                 alert("Wrong Answer!");
+                secondsLeft=secondsLeft -10;
             })
 
             //append to container
@@ -158,6 +161,7 @@ function setTime() {
             buttonB.addEventListener("click", function() {
                 // secondsLeft-10;
                 alert("Wrong Answer!");
+                secondsLeft=secondsLeft -10;
             })
             //append to container
             buttonsAnswerB.appendChild(buttonB);
@@ -202,6 +206,7 @@ function setTime() {
             buttonD.addEventListener("click", function() {
                 // secondsLeft-10;
                 alert("Wrong Answer!");
+                secondsLeft=secondsLeft -10;
             })
             //append to container
             buttonsAnswerD.appendChild(buttonD);
@@ -228,6 +233,7 @@ function questionTwo() {
           //add listener
           buttonA.addEventListener("click", function() {
               alert("Wrong Answer!");
+              secondsLeft=secondsLeft -10;
           })
 
           //append to container
@@ -248,8 +254,8 @@ function questionTwo() {
           buttonB.setAttribute("style","background-color:purple; border-color:purple; margin:5px;");
           //add listener
           buttonB.addEventListener("click", function() {
-              secondsLeft-10;
               alert("Wrong Answer!");
+              secondsLeft=secondsLeft -10;
           })
           //append to container
           buttonsAnswerB.appendChild(buttonB);
@@ -293,6 +299,7 @@ function questionTwo() {
           //add listener
           buttonD.addEventListener("click", function() {
             alert("Wrong Answer!");
+            secondsLeft=secondsLeft -10;
         })  
           //append to container
           buttonsAnswerD.appendChild(buttonD);
@@ -318,6 +325,7 @@ function questionTwo() {
           //add listener
           buttonA.addEventListener("click", function() {
               alert("Wrong Answer!");
+              secondsLeft=secondsLeft -10;
           })
 
           //append to container
@@ -338,8 +346,8 @@ function questionTwo() {
           buttonB.setAttribute("style","background-color:purple; border-color:purple; margin:5px;");
           //add listener
           buttonB.addEventListener("click", function() {
-              secondsLeft-10;
               alert("Wrong Answer!");
+              secondsLeft=secondsLeft -10;
           })
           //append to container
           buttonsAnswerB.appendChild(buttonB);
@@ -359,6 +367,7 @@ function questionTwo() {
           //add listener
           buttonC.addEventListener("click", function() {
               alert("Wrong Answer!");
+              secondsLeft=secondsLeft -10;
           })
           //append to container
           buttonsAnswerC.appendChild(buttonC);
@@ -409,6 +418,7 @@ function questionFour() {
           //add listener
           buttonA.addEventListener("click", function() {
               alert("Wrong Answer!");
+              secondsLeft=secondsLeft -10;
           })
 
           //append to container
@@ -429,8 +439,8 @@ function questionFour() {
           buttonB.setAttribute("style","background-color:purple; border-color:purple; margin:5px;");
           //add listener
           buttonB.addEventListener("click", function() {
-              secondsLeft-10;
               alert("Wrong Answer!");
+              secondsLeft=secondsLeft -10;
           })
           //append to container
           buttonsAnswerB.appendChild(buttonB);
@@ -474,6 +484,7 @@ function questionFour() {
           //add listener
           buttonD.addEventListener("click", function() {
             alert("Wrong Answer!");
+            secondsLeft=secondsLeft -10;
         })  
           //append to container
           buttonsAnswerD.appendChild(buttonD);
@@ -499,6 +510,7 @@ function questionFour() {
           //add listener
           buttonA.addEventListener("click", function() {
               alert("Wrong Answer!");
+              secondsLeft=secondsLeft -10;
           })
 
           //append to container
@@ -519,8 +531,8 @@ function questionFour() {
           buttonB.setAttribute("style","background-color:purple; border-color:purple; margin:5px;");
           //add listener
           buttonB.addEventListener("click", function() {
-              secondsLeft-10;
               alert("Wrong Answer!");
+              secondsLeft=secondsLeft -10;
           })
           //append to container
           buttonsAnswerB.appendChild(buttonB);
@@ -540,6 +552,7 @@ function questionFour() {
           //add listener
           buttonC.addEventListener("click", function() {
             alert("Wrong Answer!");
+            secondsLeft=secondsLeft -10;
           })
           //append to container
           buttonsAnswerC.appendChild(buttonC);
@@ -582,7 +595,6 @@ function questionFour() {
 
   } 
 
-  //LEFT OFF HERE
 
   function allDone() {
     question.textContent = "All done!";
@@ -636,9 +648,10 @@ function questionFour() {
             //add listening event
             submitButton.addEventListener("click", function(event) {
             event.preventDefault();   
-            console.log("You submitted the form");
+            // console.log("You submitted the form");
             alert("You have submitted your initials.  To take the quiz again, just hit refresh!");
                  });
+                
 
             //local storage
             // submitButton.addEventListener = "Store";
@@ -646,6 +659,7 @@ function questionFour() {
 
             //append
             initialsBox.appendChild(submitButton)
+       
 
         //append to div
         submitName.appendChild(initialsBox);
@@ -653,5 +667,7 @@ function questionFour() {
     //append to div
     document.body.appendChild(submitName);
   } 
+//ENDED UP HERE
+
 
         
