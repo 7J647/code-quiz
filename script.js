@@ -16,7 +16,9 @@ var scoreTimer = document.createElement ("div");
     
     //add highscore content
     var highScore = document.createElement ("div");
-    highScore.textContent = "View High Scores";
+    //hid the highScore by deleting the text as it doesn't look like it was in the readMe
+    // highScore.textContent = "View High Scores";
+    highScore.textContent = "";
     highScore.setAttribute("style", "font-size:medium; text-align:left; margin-left:20px; float:left;")
     //trying to get a link here
     // highScore.setAttribute("href", "/index2.html;")
@@ -110,14 +112,6 @@ function setTime() {
   
     }, 1000);
   }
-//create function to stop timer countdown on completion
-//   function stopInterval() {
-//     clearInterval(timerInterval);
-//   }
-
-// create variable to log timer on correctly answering the 5th question
-
-
 
   //create function to start questions
 
@@ -214,7 +208,6 @@ function setTime() {
       document.body.appendChild(buttonsAnswerD);
 
     }       
-// LEFT OFF HERE
        
 function questionTwo() {
     question.textContent = "The condition of an if/else statement is enclosed within ____________";
@@ -400,7 +393,6 @@ function questionTwo() {
 
   } 
 
-
 function questionFour() {
     question.textContent = "String values must be enclosed within ______ when being assigned to variables:";
     question.setAttribute("style", "text-align:left; padding: 20px; font-weight:bold; margin:auto; width:62%;");
@@ -580,13 +572,6 @@ function questionFour() {
             buttonD.remove();
             allDone()
 
-
-            // stopInterval()
-            // ButtonA.setAttribute("style", "visibility:hidden")
-            // ButtonB.setAttribute("style", "visibility:hidden")
-            // ButtonC.setAttribute("style", "visibility:hidden")
-            // ButtonD.setAttribute("style", "visibility:hidden")
-            // allDone()
         })  
           //append to container
           buttonsAnswerD.appendChild(buttonD);
