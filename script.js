@@ -217,7 +217,7 @@ function setTime() {
 // LEFT OFF HERE
        
 function questionTwo() {
-    question.textContent = "The conditon of an if/else statement is enclosed within ____________";
+    question.textContent = "The condition of an if/else statement is enclosed within ____________";
     question.setAttribute("style", "text-align:left; padding: 20px; font-weight:bold; margin:auto; width:62%;");
      
     //creating a container for each button, starting with button a
@@ -649,14 +649,32 @@ function questionFour() {
             submitButton.addEventListener("click", function(event) {
             event.preventDefault();   
             // console.log("You submitted the form");
+            console.log(enterHere.value);
+            console.log(secondsLeft);
             alert("You have submitted your initials.  To take the quiz again, just hit refresh!");
+            
+            // var FinalStats = 
+
+            localStorage.setItem("MyInitials", enterHere.value)
+            localStorage.setItem("FinalScore", secondsLeft)
                  });
-                
+                 
+            // var quizResult =     
+          
+                 
+                //  localStorage.setItem(enterHere.value, JSON.stringify(quizResult))
+            // var myInitials = "";
+                 // 
+                //  localStorage.setItem(myInitials, enterHere);
+            
+            // function mySave () {
+            //   var myInitials = document.getElementById(enterHere).value;
+            //   localStorage.setItem(myInitials);
+            // }   
+            // mySave();  
 
-            //local storage
-            // submitButton.addEventListener = "Store";
-
-
+        
+             
             //append
             initialsBox.appendChild(submitButton)
        
