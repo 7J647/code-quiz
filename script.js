@@ -653,27 +653,11 @@ function questionFour() {
             console.log(secondsLeft);
             alert("You have submitted your initials.  To take the quiz again, just hit refresh!");
             
-            // var FinalStats = 
-
-            localStorage.setItem("MyInitials", enterHere.value)
-            localStorage.setItem("FinalScore", secondsLeft)
-                 });
-                 
-            // var quizResult =     
+            //initials and score saved to local storage
+            localStorage.setItem("FinalScores", enterHere.value + " had a score of " + secondsLeft);
           
-                 
-                //  localStorage.setItem(enterHere.value, JSON.stringify(quizResult))
-            // var myInitials = "";
-                 // 
-                //  localStorage.setItem(myInitials, enterHere);
-            
-            // function mySave () {
-            //   var myInitials = document.getElementById(enterHere).value;
-            //   localStorage.setItem(myInitials);
-            // }   
-            // mySave();  
-
-        
+            });
+             
              
             //append
             initialsBox.appendChild(submitButton)
@@ -685,7 +669,7 @@ function questionFour() {
     //append to div
     document.body.appendChild(submitName);
   } 
-//ENDED UP HERE
+
 
 
         
