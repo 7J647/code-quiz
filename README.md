@@ -8,7 +8,7 @@ We were instructed to present the user with an intro screen outlining the parame
 
 The user is presented with four possible answers to each question and is alerted as to whether the answer is correct or not.  The next question is not presented until the question is answered correctly.
 
-The game ends either when all questions are answered correctly, or when the timer reaches zero.  If the user is able to complete the quiz before the timer reaches zero, they are prompted to enter their initials.  Their initials and score are the placed into local storage.
+The game ends either when all questions are answered correctly, or when the timer reaches zero.  If the user is able to complete the quiz before the timer reaches zero, they are prompted to enter their initials.  Their initials and score are then placed into local storage.
 
 A great lesson learned in developing this project was the importance of good pseudocoding.  Upon reflection I did not properly think this through because though I did outline the steps I did not think in terms of the "DRY" concept.  I took each section one by one and basically hard-coded them.  By the time I reached question 3 I realized my error and that I should have built arrays and loops with the various questions and answers but by that stage there was too much time invested to turn back.
 
