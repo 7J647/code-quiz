@@ -19,6 +19,8 @@ I had difficulty putting the user's initials and scores into local storage in a 
 The URL for this website is https://7j647.github.io/code-quiz/
 
 <img src ="./Screenshot.jpg" alt= "Code Quiz app screen shot">
+<img src ="./CodeQuiz2.png" alt= "Code Quiz app screen shot">
+<img src ="./CodeQuiz3.png" alt= "Code Quiz app screen shot">
 
 ### Credits
 
